@@ -1,5 +1,25 @@
+@font-face {
+    font-family: "Circe Rounded";
+    src: url(/fonts/CirceRounded-Regular.otf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Circe Rounded";
+    src: url(/fonts/CirceRounded-Light.otf);
+    font-weight: 300;
+    font-display: swap;
+}
+
 :root {
     --max-width: 1100px;
+    --main-color: #fdfdff;
+    --menu-color: #eeeeff;
+    --menu-text: #434b74;
+    --page-text: #323854;
+    --pages-background: #f6f6fe;
+    --button-pages: #decfff;
 }
 
 * {
@@ -10,6 +30,48 @@
 
 html,
 body {
+    font-family: "Circe Rounded", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     max-width: 100vw;
     overflow-x: hidden;
+    background-color: var(--main-color);
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    padding: 0 0 0 50px;
+}
+
+button {
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+}
+
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: inherit;
+}
+
+section {
+    flex-grow: 1;
+}
+
+main {
+    padding: 20px 50px 0 32px;
+    color: var(--page-text);
+}
+
+.table__button {
+    background: var(--button-pages);
+    border-radius: 30px;
 }

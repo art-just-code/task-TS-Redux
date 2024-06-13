@@ -1,8 +1,289 @@
-.main {
+.home__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 114px 114px 372px;
+    gap: 20px;
+}
+
+.home__grid div {
+    border-radius: 30px;
+}
+
+/* Banner */
+
+.home__banner {
+    grid-column: span 3;
+    grid-row: span 2;
+    background: #7362bc;
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+}
+
+.home__banner img {
+    float: right;
+}
+
+.home__banner h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 56px 12px 20px 40px;
+}
+
+.home__banner p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+/* Timer */
+
+.home__timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    background: rgba(255, 241, 203, 1);
+    color: rgba(50, 56, 84, 1);
+}
+
+.home__timer h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.home__timer button {
+    max-width: 220px;
+    height: 48px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: inherit;
+    border: 1px dashed rgba(50, 56, 84, 1);
+}
+
+/* Homework & Report */
+
+.home__homework {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #d8ecff;
+    position: relative;
+    padding: 16px;
+}
+
+.home__homework p,
+.home__report p {
+    color: rgba(50, 56, 84, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+.home__homework img,
+.home__report img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(50, 56, 84, 1);
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.home__report {
+    grid-column: span 1;
+    grid-row: span 1;
+    background: #e8ccff;
+    position: relative;
+    padding: 16px;
+}
+
+/* Balance & Schedule */
+
+.home__balance {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    grid-column: span 2;
+    border: 1px solid #7362bc;
+    color: rgba(50, 56, 84, 1);
+    padding: 28px;
+}
+
+.home__balance h4,
+.home__schedule h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table h4 {
+    margin-bottom: 16px;
+}
+
+.table div + div {
+    border-radius: unset;
+    border-top: 1px solid #eeeeff;
+}
+
+.table div > div {
+    border-top: none;
+}
+
+.table__elem {
     align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
+    min-height: 60px;
+}
+
+.balance__table_elem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule__table_elem {
+    display: grid;
+    grid-template-columns: 42px 196px 1fr 116px;
+    column-gap: 16px;
+    padding-right: 40px;
+}
+
+.table__elem span {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--menu-color);
+}
+
+.home__table_button {
+    height: 40px;
+    max-width: 288px;
+}
+
+.home__schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 4;
+    border: 1px solid rgba(115, 98, 188, 1);
+    padding: 28px;
+}
+
+.home__schedule button {
+    width: 100%;
+    max-width: 344px;
+}
+
+.home__schedule span {
+    all: unset;
+}
+
+.schedule__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule__date p:first-child {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.schedule__date p:last-child {
+    font-size: 12px;
+    line-height: 16.2px;
+    text-align: center;
+}
+
+.schedule__date div p:nth-child(3) {
+    font-size: 16px;
+    line-height: 21.6px;
+    text-align: left;
+}
+
+.schedule__teacher {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.schedule__teacher p:first-child {
+    font-size: 12px;
+    line-height: 16.2px;
+    text-align: right;
+}
+
+.schedule__teacher p:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    text-align: left;
+}
+
+.schedule__teacher div {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.schedule__buttons {
+    display: flex;
+    column-gap: 4px;
+}
+
+.schedule__buttons button {
+    border-radius: 15px;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 16.2px;
+}
+
+.schedule__buttons button:first-child {
+    background: none;
+    border: 1px solid #8d7fc7;
+    border-radius: 15px;
+}
+
+.schedule__buttons button:last-child {
+    background: #8d7fc7;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.schedule__buttons button:disabled {
+    border: 1px solid #eeeeff;
+}
+
+@media (width < 1400px) {
+    .home__banner h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        margin: 28px 6px 0 20px;
+    }
+
+    .home__banner p {
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-left: 20px;
+    }
 }

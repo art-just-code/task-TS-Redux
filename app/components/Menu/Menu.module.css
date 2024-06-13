@@ -1,0 +1,104 @@
+.menu {
+    position: relative;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    background-color: var(--menu-color);
+    min-width: 236px;
+    height: 704px;
+    border-radius: 30px;
+    margin: 24px 0;
+}
+
+.logo {
+    display: block;
+    padding: 44px 0 0;
+    width: 148px;
+    min-width: 148px;
+    align-self: center;
+}
+
+.logo__image {
+    width: 100%;
+}
+
+.menu__list {
+    color: var(--menu-text);
+    margin: 40px 20px auto 0;
+}
+
+.menu__item {
+    width: 100%;
+    height: 40px;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    border-radius: 0 30px 30px 0;
+    fill: #434b74;
+    stroke-width: 1.5px;
+    transition: 0.3s;
+}
+
+.menu__link:hover {
+    background: #8d7fc7;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menu__link:hover svg path {
+    transition: 0.3s;
+    stroke: #fff;
+}
+
+.menu__icon {
+    margin: auto 8px auto 44px;
+}
+
+.menu__banner {
+    background-color: var(--main-color);
+    height: 128px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 24px 20px 24px;
+    color: #323854;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.menu__banner h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.menu__banner p {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.menu__banner button {
+    background: #d8ecff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+    width: 68px;
+    height: 32px;
+    border-radius: 15px;
+    margin: 10px auto 10px 0;
+}
+
+.menu__banner img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

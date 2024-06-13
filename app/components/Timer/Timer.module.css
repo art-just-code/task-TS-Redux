@@ -1,0 +1,18 @@
+.timer {
+    display: flex;
+    column-gap: 12px;
+}
+
+.timer p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.25px;
+    text-align: left;
+}
+
+.timer p span {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
